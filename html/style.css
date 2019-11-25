@@ -7,11 +7,36 @@
     text-decoration: line-through;
 }
 
-/*still figuring out how to change direction of nav bar*/
-.mainNav {
+
+#mainNav {
+    margin-left: 0%;
+    margin-right:0%;
+    white-space: normal;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+#mainNav li {
+    display: inline-block;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    text-align: center;
+    letter-spacing: 0.2em;
+    border-style: solid;
+    border-width: 2px;
+    margin:2px;
+}
+
+#mainNav li a {
+    display: inline-block;
+    color: #27ae60;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px;
+}
+
+#mainNav li a:hover {
+    color: #2c3e50;
+    background-color: #e74c3c;
 }
 
 
