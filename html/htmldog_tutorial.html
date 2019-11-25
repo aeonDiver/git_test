@@ -5,112 +5,157 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="internal">My first htmldog webpage</h1>
-    
-    <h2>What this is</h2>
-    <p>A simple page put together using HTML</p>
+    <nav id="mainNav">
+        <ul>
+            <li><a href="#navWhat">WHat this is</a></li>
+            <li><a href="#navWhy">Why this is</a></li>
+            <li><a href="#navInternal">Internal link</a></li>
+            <li><a href="#navTable">Tables</a></li>
+            <li><a href="#navImg">Image</a></li>
+            <li><a href="#navForm">Form</a></li>
+            <li><a href="#navLinks">Links</a></li>
+        </ul>
+        <aside>
+            <blockquote style="text-align: center; background-color: #9b59b6; padding: 5px;">Jesslyn, if you are reading this, you rock.</blockquote>
+        </aside>
+    </nav>
+    <article>
+        <header>
+            <h1 id="internal">My first htmldog webpage</h1>
+        </header>
+        <section id="mainContent">
+            <h2 id="navWhat">What this is</h2>
+            <p>A simple page put together using HTML</p>
+            <dl>
+                <dt><em>Word</em></dt>
+                <dd>a conversation</dd>
+                <dd>collection of letters that has meaning in language</dd>
+                <dd>thing in my ear</dd>
+            </dl>
 
-    <h2>Why this is</h2>
-    <ol>
-        <li>To learn HTML</li>
-        <li>
-            To show off
+            <h2 id="navWhy">Why this is</h2>
             <ol>
-                <li>To my boss</li>
-                <li>To my friends</li>
-                <li>To my cat</li>
-                <li>To the little talking duck in my brain</li>
-            </ol>
-        </li>
-        <li>Because I've fallen in love with mu computer and want to give her some HTML loving. Clearly.</li>
-    
-    <h3>I made extra text to display the internal link better.</h3>
-    <ol>
-        <li>Extra text</li>
-        <li>
-            To show off
-            <ol>
-                <li>To my boss</li>
-                <li>To my friends</li>
-                <li>To my cat</li>
-                <li>To the little talking duck in my brain</li>
-            </ol>
-        </li>
-        <li>Because I've fallen in love with mu computer and want to give her some HTML loving. Clearly.</li>
-    </ol>
-
-    <h3>This is to practice building tables to contain tabular data (and not to structure pages).</h3>
-    <table>
-        <!-- not sure hwat to put here yet , id class?
-        <tr id ="firstRow">
-            <td>Way to travel</td>
-            <td>Times a week</td>
-            <td>Enjoyable?</td>
-        </tr>-->
-        <tr>
-            <td>Row</td>
-            <td>2</td>
-            <td>True</td>
-        </tr>
-        <tr>
-            <td>Run</td>
-            <td>6</td>
-            <td>True</td>
-        </tr>
-        <tr>
-            <td>Walk</td>
-            <td>5</td>
-            <td>True</td>
-        </tr>
-    </table>
-
-    <h3>Image</h3>
-    <ol>
-        <li>To learn HTML</li>
-        <li>
-            To show off
-            <ol>
-                <li>To my boss</li>
-                <li>To my friends</li>
+                <li>To learn HTML</li>
                 <li>
-                    To my cat
-                    <p>(My cat is pictured below) For some reason, it would only display with absolute path, relative path not working. </p>
-                    <img src="/home/tedtop/odin_on_rails/git_test/media/cat.jpg" width="160" height="100" alt="my pussy cat">
+                    To show off
+                    <ol>
+                        <li>To my boss</li>
+                        <li>To my friends</li>
+                        <li>To my cat</li>
+                        <li>To the little talking duck in my brain</li>
+                    </ol>
                 </li>
-                <li>To the little talking duck in my brain</li>
+                <li>Because I've fallen in love with my computer and want to give her some HTML loving. Clearly.</li>
             </ol>
-        </li>
-        <li>Because I've fallen in love with mu computer and want to give her some HTML loving. Clearly.</li>
-    </ol>
-    <!--this form has no script-->
-    <h3>Form practice</h3>
-    <p><strong>It looks cool but it wont do anything without the php/script</strong></p>
-    <form action=" .php" method="post">
+            <h3 id="navInternal">I made extra text to display the internal link better.</h3>
+            <ol>
+                <li>Extra text</li>
+                <li>
+                    To show off
+                    <ol>
+                        <li>To my boss</li>
+                        <li>To my friends</li>
+                        <li>To my cat</li>
+                        <li>To the little talking duck in my brain</li>
+                    </ol>
+                </li>
+                <li>Because I've fallen in love with my computer and want to give her some HTML loving. Clearly.</li>
+            </ol>
 
-            <p>Name:</p>
-            <p><input name="name" value="Enter your name"></p>
-        
-            <p>Species:</p>
-            <p><input name="species"></p>
-            <!-- remember: 'type="text"' isn't actually necessary -->
-        
-            <p>Comments: </p>
-            <p><textarea name="comments" rows="5" cols="20">Your comments</textarea></p>
-        
-            <p>Are you:</p>
-            <p><input type="radio" name="areyou" value="female"> Female</p>
-            <p><input type="radio" name="areyou" value="male"> Male</p>
-            <p><input type="radio" name="areyou" value="hermaphrodite"> An hermaphrodite</p>
-            <p><input type="radio" name="areyou" value="asexual"> Asexual</p>
-        
-            <p><input type="submit"></p>
-        
-        </form>
+            <h3 id="navTable">This is to practice building tables to contain tabular data (and not to structure pages).</h3>
+            <div>
+                <table>
+                    <!-- not sure hwat to put here yet , id class?-->
+                    <tr class="firstRow">
+                        <td>Way to travel</td>
+                        <td>Times a week</td>
+                        <td>Enjoyable?</td>
+                        <td>Optional</td>
+                    </tr>
+                    <tr>
+                        <td>Row</td>
+                        <td>2</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Run</td>
+                        <td>6</td>
+                        <td colspan="2">True</td>
+                    </tr>
+                    <tr>
+                        <td>Walk</td>
+                        <td>5</td>
+                        <td rowspan="2">True</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Walk</td>
+                        <td>Walk</td>
+                    </tr>
+                </table>
+            </div>
+            <h3 id="navImg">Image</h3>
+            <ol>
+                <li>To learn HTML</li>
+                <li>
+                    To show off
+                    <ol>
+                        <li>To my boss</li>
+                        <li>To my friends</li>
+                        <li>
+                            To my cat
+                            <p><span class="omitted">(My cat is pictured below) 
+                                For some reason, it would only display with absolute path, relative path not working.</span>
+                            </p>
+                            <p>    
+                                It's working now, worked out how to find dir. <pre><code>../media/cat.jpg</code></pre>
+                            </p>
+                            <img src="../media/cat.jpg" width="240" height="120" alt="my pussy cat">
+                        </li>
+                        <li>To the little talking duck in my brain</li>
+                    </ol>
+                </li>
+                <li>Because I've fallen in love with my computer and want to give her some HTML loving. Clearly.</li>
+            </ol>
+            <!--this form has no script-->
+            <h3 id="navForm">Form practice</h3>
+            <p><strong>It looks cool but it wont do anything without the php/script</strong></p>
+            <form action=" .php" method="post">
+
+                    <p>Name:</p>
+                    <p><input name="name" value="Enter your name"></p>
+                
+                    <p>Species:</p>
+                    <p><input name="species"></p>
+                    <!-- remember: 'type="text"' isn't actually necessary -->
+                
+                    <p>Comments: </p>
+                    <p><textarea name="comments" rows="5" cols="20">Your comments</textarea></p>
+                
+                    <p>Are you:</p>
+                    <p><input type="radio" name="areyou" value="female"> Female</p>
+                    <p><input type="radio" name="areyou" value="male"> Male</p>
+                    <p><input type="radio" name="areyou" value="hermaphrodite"> An hermaphrodite</p>
+                    <p><input type="radio" name="areyou" value="asexual"> Asexual</p>
+                
+                    <p><input type="submit"></p>
+                
+                </form>
 
 
-    <h2>Where to find the tutorial</h2>
-    <p><a href="http://www.htmldog.com">HTML Dog</a></p>
-    <p><a href="#internal">Go to the internal link</a></p>
-    
+            <h2 id="navLinks">Where to find the tutorial</h2>
+            <p><a href="http://www.htmldog.com">HTML Dog</a></p>
+        </section>
+        <section>
+            <aside>
+                <figure>
+                    <img src="../media/cat.jpg" width="240" height="120">
+                    <figcaption>Cat picture</figcaption>
+                </figure>
+                <p><a href="#internal">Go to the internal link</a></p></aside>
+        </section>
+        <footer>
+            <p>[Footer content]</p>
+        </footer>
+    </article>
 </body>
 </html>
